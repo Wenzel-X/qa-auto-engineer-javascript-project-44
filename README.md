@@ -16,7 +16,7 @@
 ### Install
 
 ```
-$ git clone git@github.com/Wenzel-X/qa-auto-engineer-javascript-project-44.git
+$ git clone git@github.com:Wenzel-X/qa-auto-engineer-javascript-project-44.git
 $ cd qa-auto-engineer-javascript-project-44
 $ make install
 ```
