@@ -4,15 +4,9 @@ import getRandomInt from '../randomNumber.js';
 const description = 'What is the result of the expression?';
 
 const getRandomSign = () => {
-  const randomNumForSign = getRandomInt(0, 3);
-  switch (randomNumForSign) {
-    case 1:
-      return '+';
-    case 2:
-      return '-';
-    default:
-      return '*';
-  }
+  const signs = ['+', '-', '*'];
+  const randomSign = signs[getRandomInt(0, signs.length - 1)];
+  return randomSign;
 };
 
 const calculate = (num1, operator, num2) => {
@@ -21,8 +15,10 @@ const calculate = (num1, operator, num2) => {
       return num1 + num2;
     case '-':
       return num1 - num2;
-    default:
+    case '*':
       return num1 * num2;
+    default:
+      return console.log('Error!');
   }
 };
 

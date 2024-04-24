@@ -8,7 +8,7 @@ export default (description, getQuestionAndAnswer) => {
   console.log(`Hello, ${userName}!`);
   console.log(`${description}`);
 
-  for (let i = 0; i < roundCount; i += 1) {
+  for (let i = 1; i <= roundCount; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
 
