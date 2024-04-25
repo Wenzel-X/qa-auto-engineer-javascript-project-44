@@ -18,7 +18,7 @@ const calculate = (num1, operator, num2) => {
     case '*':
       return num1 * num2;
     default:
-      return console.log('Error!');
+      throw new Error('Unsupported operation!');
   }
 };
 
